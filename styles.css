@@ -150,25 +150,39 @@ nav {
 }
 
 .header__image img {
-  max-width: 600px;
+  max-width: 700px;
   margin-inline: auto;
 }
-
 .header__content h2 {
   max-width: 400px;
+  background-color: #42200b;
   margin-inline: auto;
   margin-bottom: 2rem;
   padding: 1rem 2rem;
   font-size: 2.5rem;
   font-weight: 400;
   font-family: var(--header-font-2);
-  color: var(--primary-color);
-  border: 2px dashed var(--primary-color);
+  border: 2px dashed white;
   text-align: center;
+  border-radius: 50px;
+  justify-self: center;
+}
+
+.header__content a {
+  max-width: 400px;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-family: var(--header-font-2);
+  color: rgb(236, 227, 194);
+  text-align: center;
+  justify-self: center;
 }
 
 .header__content h1 {
-  font-size: 4rem;
+  font-size: 2.2rem;
   font-weight: 500;
   font-family: 'Tajawal', sans-serif;  color: var(--primary-color);
   line-height: 3.5rem;
@@ -578,7 +592,7 @@ nav {
   padding: 1rem 1.5rem;
 }
 
-.destination__details > div {
+.destination__details div {
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -591,6 +605,7 @@ nav {
   font-weight: 500;
   color: var(--text-light);
 }
+
 
 .destination__details p {
   margin-bottom: 1rem;
