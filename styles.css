@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
+/* banner__card */
 :root {
   --primary-color: #42200b;
   --secondary-color: #ffc135;
@@ -191,45 +191,6 @@ nav {
 
 .header__content h1 span {
   font-size: 3rem;
-}
-
-.banner__container {
-  display: grid;
-  gap: 1rem;
-  grid-auto-rows: 200px;
-}
-
-.banner__card {
-  padding: 1rem;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 1rem;
-}
-
-.banner__card:nth-child(1) {
-  background-image: url("assets/banner-1.png");
-}
-
-.banner__card:nth-child(2) {
-  background-image: url("assets/banner-2.png");
-}
-
-.banner__card:nth-child(3) {
-  background-image: url("assets/banner-3.png");
-}
-
-.banner__card p {
-  margin-bottom: 0.5rem;
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: var(--white);
-}
-
-.banner__card h4 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--white);
 }
 
 .order__container h3 {
@@ -619,4 +580,197 @@ nav {
   font-size: 1.25rem;
   color: var(--text-dark);
   transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__header {
+  margin-bottom: 5px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.section__description {
+  max-width: 600px;
+  margin-inline: auto;
+  color: var(--text-light);
+  text-align: center;
+}
+
+.destination__container :is(.section__header, .section__description) {
+  text-align: left;
+  margin-inline-start: unset;
+}
+
+.destination__grid {
+  margin-top: 4rem;
+  display: grid;
+  gap: 2rem 1rem;
+}
+
+.destination__card img {
+  border-radius: 1.5rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.destination__card__details {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.destination__card__details h4 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  columns: var(--text-dark);
+}
+
+.destination__card__details p {
+  columns: var(--text-light);
+}
+
+.destination__rating {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+
+.destination__card:hover .destination__rating {
+  background-color: var(--primary-color-dark);
+}
+
+
+
+.journey__grid {
+  margin-top: 2rem;
+  display: grid;
+  gap: 0 1rem;
+  color: white;
+
+}
+
+.journey__card {
+  position: relative;
+  isolation: isolate;
+  padding-top: 4rem;
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  margin: 10px;
+  color: white;
+
+}
+
+.journey__card__bg {
+  padding: 3rem;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+
+}
+
+.journey__card:nth-child(1) {
+  background-image: url("assets/banner-1.png");
+}
+
+.journey__card:nth-child(2) {
+  background-image: url("assets/banner-2.png");
+}
+
+.journey__card:nth-child(3) {
+  background-image: url("assets/banner-3.png");
+}
+
+.journey__card__bg h4 {
+  font-size: 3rem;
+  color: var(--white);
+}
+
+.journey__card__content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background-color: var(--primary-color);
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  transition: 0.3s;
+  color: white;
+
+}
+
+.journey__card:hover .journey__card__content {
+  top: 0;
+  color: white;
+
+}
+
+.journey__card__content h4 {
+  margin-bottom: 1rem;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+
+}
+
+.journey__card__content p {
+  color: var(--extra-light);
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.section__header {
+  font-size: 50px;
+}
+
+.section__description {
+  font-size: 22px;
 }
