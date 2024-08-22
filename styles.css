@@ -83,7 +83,6 @@ body {
 nav {
   position: fixed;
   width: 100%;
-  max-width: var(--max-width);
   margin-inline: auto;
   z-index: 9;
 }
