@@ -732,6 +732,7 @@ nav {
 
 .journey__card__bg {
   padding: 3rem;
+  padding-top: 8rem;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
