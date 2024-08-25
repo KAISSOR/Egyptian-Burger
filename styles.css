@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-/* banner__card */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+
+
 :root {
   --primary-color: #42200b;
   --secondary-color: #ffc135;
@@ -24,19 +25,23 @@
 }
 
 .section__header {
-  font-size: 3rem;
-  font-weight: 500;
-  font-family: var(--header-font-1);
+  font-family: "Noto Kufi Arabic", sans-serif;
   color: var(--primary-color);
   text-align: center;
   line-height: 3.75rem;
   text-shadow: 2px 2px var(--secondary-color);
+  margin-bottom: 5px;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
+
 .section__description {
-  font-weight: 500;
-  color: var(--text-dark);
+  color: var(--primary-color);
   line-height: 1.75rem;
+  font-size: 22px;
+  word-wrap: break-word;
+
 }
 
 .btn {
@@ -70,7 +75,7 @@ body {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 
 .header {
@@ -79,6 +84,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+
+
+
+
+
 
 nav {
   position: fixed;
@@ -96,7 +107,7 @@ nav {
 }
 
 .nav__logo img {
-  max-width: 150px;
+  max-width: 180px;
 }
 
 .nav__logo-dark {
@@ -142,25 +153,32 @@ nav {
   color: var(--secondary-color);
 }
 
+
+
+
+
+
 .header__container {
   display: grid;
   gap: 2rem;
   overflow: hidden;
+
 }
 
 .header__image img {
-  max-width: 700px;
+  max-width: 200px;
   margin-inline: auto;
+  margin-top: 50px;
 }
+
 .header__content h2 {
   max-width: 400px;
   background-color: #42200b;
   margin-inline: auto;
-  margin-bottom: 2rem;
-  padding: 1rem 2rem;
+  margin-bottom: 0rem;
+  padding: rem 1rem;
   font-size: 2.5rem;
-  font-weight: 400;
-  font-family: var(--header-font-2);
+  font-family: "Noto Kufi Arabic", sans-serif;
   border: 2px dashed white;
   text-align: center;
   border-radius: 50px;
@@ -173,16 +191,16 @@ nav {
   margin-bottom: 2rem;
   font-size: 3rem;
   font-weight: 400;
-  font-family: var(--header-font-2);
+  font-family: "Noto Kufi Arabic", sans-serif;
   color: rgb(236, 227, 194);
   text-align: center;
   justify-self: center;
 }
 
 .header__content h1 {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 500;
-  font-family: 'Tajawal', sans-serif;  color: var(--primary-color);
+  font-family: "Noto Kufi Arabic", sans-serif;
   line-height: 3.5rem;
   text-align: center;
   text-shadow: 2px 2px var(--white);
@@ -192,6 +210,13 @@ nav {
   font-size: 3rem;
 }
 
+
+
+
+
+
+
+
 .order__container h3 {
   max-width: fit-content;
   margin-inline: auto;
@@ -199,13 +224,14 @@ nav {
   padding: 0.5rem 2rem;
   font-size: 2.5rem;
   font-weight: 400;
-  font-family: var(--header-font-2);
+  font-family: "Noto Kufi Arabic", sans-serif;
   color: var(--primary-color);
   background-color: var(--secondary-color);
 }
 
 .order__container .section__header {
   margin-bottom: 1rem;
+
 }
 
 .order__container .section__description {
@@ -251,6 +277,13 @@ nav {
   line-height: 1.75rem;
 }
 
+
+
+
+
+
+
+
 .event__content {
   display: grid;
   gap: 2rem;
@@ -263,27 +296,34 @@ nav {
 }
 
 .event__details h3 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 500;
-  font-family: var(--header-font-2);
+  font-family: "Noto Kufi Arabic", sans-serif;
   color: var(--text-dark);
 }
 
 .event__details h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 500;
-  font-family: var(--header-font-2);
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 
 .event__details p {
   font-size: 1.3rem;
   font-weight: 500;
-  font-family: var(--header-font-2);
+  font-family: "Noto Kufi Arabic", sans-serif;
 }
 
 .event__details .section__header {
   margin-bottom: 1rem;
 }
+
+
+
+
+
+
+
 
 .reservation {
   position: relative;
@@ -293,7 +333,7 @@ nav {
 .reservation__container h3 {
   font-size: 4rem;
   font-weight: 500;
-  font-family: var(--header-font-2);
+  font-family: "Noto Kufi Arabic", sans-serif;
   color: var(--text-dark);
   text-align: center;
 }
@@ -321,6 +361,11 @@ nav {
 .reservation img {
   display: none;
 }
+
+
+
+
+
 
 .footer {
   background-image: url("assets/footer-bg.png");
@@ -385,6 +430,10 @@ nav {
   color: var(--white);
   text-align: center;
 }
+
+
+
+
 
 @media (width > 540px) {
   .banner__container {
@@ -535,6 +584,9 @@ nav {
 }
 
 
+
+
+
 .destination__grid {
   margin-top: 4rem;
   display: grid;
@@ -565,7 +617,6 @@ nav {
   color: var(--text-light);
 }
 
-
 .destination__details p {
   margin-bottom: 1rem;
   display: flex;
@@ -584,42 +635,10 @@ nav {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .section__container {
   max-width: var(--max-width);
   margin: auto;
   padding: 5rem 1rem;
-}
-
-.section__header {
-  margin-bottom: 5px;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--text-dark);
-  text-align: center;
 }
 
 .section__description {
@@ -627,7 +646,16 @@ nav {
   margin-inline: auto;
   color: var(--text-light);
   text-align: center;
+  line-height: 1.5;
+  word-wrap: break-word;
 }
+
+
+
+
+
+
+
 
 .destination__container :is(.section__header, .section__description) {
   text-align: left;
@@ -768,10 +796,41 @@ nav {
   color: var(--white);
 }
 
-.section__header {
-  font-size: 50px;
+
+
+
+
+
+
+
+
+/*
+
+.container {
+  position: relative;
+  overflow: hidden;
+}
+  .left, .right {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background-color: black;
+  transition: transform 0.5s ease-in-out;
 }
 
-.section__description {
-  font-size: 22px;
+.left {
+  left: 0;
 }
+
+.right {
+  right: 0;
+}
+
+.container:hover .left {
+  transform: translateX(-100%);
+}
+
+.container:hover .right {
+  transform: translateX(100%);
+} */
